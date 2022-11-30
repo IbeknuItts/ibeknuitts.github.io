@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Car Website Design</title>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@600&display=swap" rel="stylesheet">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="css/car.css">
+
+    <!-- internal tabel css -->
+    <style type="text/css">
+		/* Table */
+		body {
+			font-family: "lucida Sans Unicode", "Lucida Grande", "Segoe UI", vardana
+		}
+		.demo-table {
+			border-collapse: collapse;
+			font-size: 13px;
+		}
+		.demo-table th, 
+		.demo-table td {
+			padding: 7px 17px;
+		}
+		.demo-table .title {
+			caption-side: bottom;
+			margin-top: 12px;
+		}
+		.demo-table thead th:last-child,
+		.demo-table tfoot th:last-child,
+		.demo-table tbody td:last-child {
+			border: 0;
+		}
+
+		/* Table Header */
+		.demo-table thead th {
+			border-right: 1px solid #c7ecc7;
+			text-transform: uppercase;
+            font-weight: 900;
+            font-size: 14px;
+		}
+
+		/* Table Body */
+		.demo-table tbody td {
+			color: #353535;
+			border-right: 1px solid #c7ecc7;
+		}
+		.demo-table tbody tr:nth-child(odd) td {
+			background-color: #f4fff7;
+		}
+		.demo-table tbody tr:nth-child(even) td {
+			background-color: #dbffe5;
+		}
+		.demo-table tbody td:nth-child(4),
+		.demo-table tbody td:first-child,
+		.demo-table tbody td:last-child {
+			text-align: right;
+		}
+		.demo-table tbody tr:hover td {
+			background-color: #ffffa2;
+			border-color: #ffff0f;
+			transition: all .2s;
+		}
+	</style>
+</head>
+
+<body>
+
+    <!-- Modal -->
+    <div id="overlay" onclick="off()">
+    </div>
+    <div class="modal" id="modal2">
+        <div class="header" id="header">
+            <p>Honda Mobilio</p>
+            <span id="modal1" class="close" onclick="off(this.id)">
+                <i class="fas fa-times-circle"></i>
+            </span>
+        </div>
+        <div class="body" id="body">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/RZJ8H2mRU6w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            <form action="">
+                <h1 style="margin: 20px; font-weight: bolder;">Daftar Harga Mobilio</h1>
+                <!-- table -->
+                <table class="demo-table" style="margin: 20px;">
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Edisi</th>
+                            <th>Harga</th>
+                            <th>Transmisi</th>
+                            <th>Seats</th>
+                            <th>Mesin</th>
+                            <th>Bahan Bakar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>jritot</td>
+                            <td>chocolate</td>
+                            <td>medium</td>
+                            <td>RP. 13.000</td>
+                            <td>RP. 11.000</td>
+                            <td>RP. 13.000</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>jatot</td>
+                            <td>strawberry</td>
+                            <td>large</td>
+                            <td>RP. 15.000</td>
+                            <td>RP. 13.000</td>
+                            <td>RP. 15.000</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>munet</td>
+                            <td>vanila</td>
+                            <td>large</td>
+                            <td>RP. 15.000</td>
+                            <td>RP. 13.000</td>
+                            <td>RP. 15.000</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>langtot</td>
+                            <td>matcha</td>
+                            <td>medium</td>
+                            <td>RP. 13.000</td>
+                            <td>RP. 11.000</td>
+                            <td>RP. 11.000</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>zatot</td>
+                            <td>blueberry</td>
+                            <td>large</td>
+                            <td>RP. 15.000</td>
+                            <td>RP. 13.000</td>
+                            <td>RP. 15.000</td>
+                        </tr>
+                    </tbody>
+                </table>     
+            </form>
+        </div>
+    </div>
+
+    <!-- Car -->
+    <div id="container">
+        <div id="navbar">
+            <div id="logo">
+                <img src="img/logo-honda.png" alt="">
+            </div>            
+        </div>
+        <div id="sideImg">
+            <img src="img/mobilio.png" alt="">
+        </div>
+        <div id="contentSection">
+            <h2>MOBILIO</h2>
+            <p>
+                Honda Mobilio tersedia dalam pilihan mesin Bensin di Indonesia MPV baru dari Honda hadir dalam 2 varian. Bicara soal spesifikasi mesin Honda Mobilio, ini ditenagai dua pilihan mesin Bensin berkapasitas 1496 cc. Mobilio tersedia dengan transmisi Manual tergantung variannya. Mobilio adalah MPV 7 seater dengan panjang 4386 mm, lebar 1683 mm, wheelbase 2650 mm. serta ground clearance 189 mm.
+            </p>
+            <button id="modal2" onclick="on(this.id)">EXPLORE</button>
+            <img src="img/logo-honda.png" alt="">
+        </div>            
+    </div>
+
+    <script src="js/car.js"></script>
+</body>
+</html>
